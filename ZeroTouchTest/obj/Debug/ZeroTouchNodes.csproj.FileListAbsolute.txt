@@ -1,0 +1,12 @@
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\bin\Debug\ZeroTouchTest.dll
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\bin\Debug\ZeroTouchTest.pdb
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.AssemblyReference.cache
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
+D:\Work\Personal\VStudio\ZeroTouchTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\bin\Debug\ZeroTouchTest.dll
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\bin\Debug\ZeroTouchTest.pdb
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.AssemblyReference.cache
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
+D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
