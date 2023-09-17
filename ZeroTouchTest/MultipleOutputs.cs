@@ -8,8 +8,8 @@ namespace ZeroTouchTest
 {
     public class MultipleOutputs
     {
-        public int multResult { get; private set; }
-        public float divResult { get; private set; }
+        private int multResult { get; set; }
+        private float divResult { get; set; }
         public static MultipleOutputs SomeNode(int num1, int num2)
         {
             MultipleOutputs multipleOutputs = new MultipleOutputs();

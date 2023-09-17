@@ -10,7 +10,3 @@ D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.c
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.AssemblyReference.cache
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
