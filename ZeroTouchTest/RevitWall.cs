@@ -15,7 +15,7 @@ namespace ZeroTouchTest
     {
         private RevitWall(){}
 
-        public Autodesk.Revit.DB.Wall Create(Autodesk.DesignScript.Geometry.Curve dynamoCurve, DN.Level lvl, bool structural)
+        public Wall Create(Autodesk.DesignScript.Geometry.Curve dynamoCurve, DN.Level lvl, bool structural)
         {
             Document doc = DocumentManager.Instance.CurrentDBDocument;
 
