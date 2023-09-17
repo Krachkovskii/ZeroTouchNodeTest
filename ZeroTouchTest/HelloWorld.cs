@@ -14,8 +14,11 @@ namespace ZeroTouchNodes
 
         }
 
+        private double _MultipliedNumber;
+
         public double MultiplyTwoNumbers(int num1, int num2)
         {
+            _MultipliedNumber = num1;
             return num1 * num2;
         }
 
@@ -44,6 +47,11 @@ namespace ZeroTouchNodes
         public string RemoveFuck(string start)
         {
             return start.Replace("Fuck", "");
+        }
+
+        public string JoinStrings(string string1, string string2)
+        {
+            return string1 + string2;
         }
     }
 }
