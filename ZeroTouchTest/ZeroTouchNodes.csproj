@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynamoServices">
+      <HintPath>E:\Program Files (x86)\Revit 2023\AddIns\DynamoForRevit\DynamoServices.dll</HintPath>
+    </Reference>
     <Reference Include="ProtoGeometry">
       <HintPath>E:\Program Files (x86)\Revit 2023\AddIns\DynamoForRevit\ProtoGeometry.dll</HintPath>
     </Reference>
@@ -85,10 +88,10 @@
       <SourceXmls Include="$(TargetDir)*.xml" />
       <SourcePkg Include="pkg.json" />
     </ItemGroup>
-    <RemoveDir Directories="$(AppData)\Dynamo\Dynamo Revit\2.6\packages\$(ProjectName)\bin" />
-    <Copy SourceFiles="@(SourceDlls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.6\packages\$(ProjectName)\bin\%(RecursiveDir)" />
-    <Copy SourceFiles="@(SourcePkg)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.6\packages\$(ProjectName)\" />
-    <Copy SourceFiles="@(SourcePdbs)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.6\packages\$(ProjectName)\bin\" />
-    <Copy SourceFiles="@(SourceXmls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.6\packages\$(ProjectName)\bin\" />
+    <RemoveDir Directories="$(AppData)\Dynamo\Dynamo Revit\2.16\packages\$(ProjectName)\bin" />
+    <Copy SourceFiles="@(SourceDlls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.16\packages\$(ProjectName)\bin\%(RecursiveDir)" />
+    <Copy SourceFiles="@(SourcePkg)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.16\packages\$(ProjectName)\" />
+    <Copy SourceFiles="@(SourcePdbs)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.16\packages\$(ProjectName)\bin\" />
+    <Copy SourceFiles="@(SourceXmls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.16\packages\$(ProjectName)\bin\" />
   </Target>
 </Project>

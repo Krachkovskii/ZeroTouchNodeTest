@@ -1,6 +1,5 @@
 ﻿using Autodesk.Revit.DB;
 using Wall = Autodesk.Revit.DB.Wall;
-using RevitServices;
 using RevitServices.Persistence;
 using RevitServices.Transactions;
 
