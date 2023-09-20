@@ -9,19 +9,16 @@ namespace ZeroTouchTest
 {
     public class MultipleOutputs
     {
-        private static int multResult { get; set; }
-        private static float divResult { get; set; }
 
-        [MultiReturn(new[] { "Multiplication", "Division" })]
-        public static Dictionary<string, object> SomeNode(int num1, int num2)
+        [MultiReturn(new[] { "Nearest", "Even", "Floor", "Ceiling" })]
+        public static Dictionary<string, object> RoundNumber(float num)
         {
-            multResult = num1 * num2;
-            divResult = (float)num1 / (float)num2;
-
             return new Dictionary<string, object> 
             {
-                { "Multiplication", multResult },
-                { "Division", divResult }
+                { "Nearest", Math.Round(num) },
+                { "Even", Math.Round(num, 0, MidpointRounding.ToEven) },
+                { "Floor", Math.Floor(num) },
+                { "Ceiling", Math.Ceiling(num) }
             };
         }
 
