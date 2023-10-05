@@ -10,12 +10,12 @@ D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.c
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
 D:\Work\Personal\VStudio\ZeroTouchNodes\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.AssemblyReference.cache
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\ZeroTouchTest.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\ZeroTouchTest.pdb
+C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\DynamoServices.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\ProtoGeometry.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\RevitServices.dll
+C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\DynamoServices.xml
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\ProtoGeometry.xml
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\cs-CZ\ProtoGeometry.resources.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\de-DE\ProtoGeometry.resources.dll
@@ -43,8 +43,7 @@ C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\ru-RU\RevitServices.resources.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\zh-CN\RevitServices.resources.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\zh-TW\RevitServices.resources.dll
+C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CoreCompileInputs.cache
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchNodes.csproj.CopyComplete
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.dll
 C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\obj\Debug\ZeroTouchTest.pdb
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\DynamoServices.dll
-C:\Users\mi\Source\Repos\Krachkovskii\ZeroTouchNodeTest\ZeroTouchTest\bin\Debug\DynamoServices.xml
