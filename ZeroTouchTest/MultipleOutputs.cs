@@ -24,7 +24,7 @@ namespace ZeroTouchNodes
 
         private static float LevenshteinAccuracy(int len, int distance)
         {
-            return ( 1 - ( distance / len ) );
+            return ( 1.0F - ( (float)distance / len ) );
         }
 
         [MultiReturn(new[] { "Result", "Likeness"})]
@@ -40,7 +40,7 @@ namespace ZeroTouchNodes
         /// <param name="Threshold">
         /// Value between 1 and 0 - how much should both pieces of text be similar to be considered the same.
         /// </param>
-        public static Dictionary<string, object> StringAlmostEqual(string ReferenceText, string CompareTo, bool CaseSensitive, float Threshold)
+        public static Dictionary<string, object> StringAlmostEqual(string ReferenceText, string CompareTo, bool CaseSensitive = true, float Threshold = 0.9F)
         {
             if (string.IsNullOrEmpty(CompareTo))
             {
