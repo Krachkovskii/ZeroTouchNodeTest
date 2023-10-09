@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autodesk.DesignScript.Runtime;
+using Autodesk.Revit.DB;
 
 namespace ZeroTouchNodes
 {
@@ -22,12 +23,12 @@ namespace ZeroTouchNodes
             };
         }
 
-        private static float LevenshteinAccuracy(int len, int distance)
+        private static double LevenshteinAccuracy(int len, int distance)
         {
-            return ( 1.0F - ( (float)distance / len ) );
+            return ( 1.0D - ( (double)distance / len ) );
         }
 
-        [MultiReturn(new[] { "Result", "Likeness"})]
+        [MultiReturn(new[] { "Result", "Similarity", "Identical"})]
         /// <summary>
         /// This node checks how similar one string is to another and returns True if the result is above the threshold. Calculations are based on Levenshtein distance.
         /// </summary>
@@ -40,14 +41,15 @@ namespace ZeroTouchNodes
         /// <param name="Threshold">
         /// Value between 1 and 0 - how much should both pieces of text be similar to be considered the same.
         /// </param>
-        public static Dictionary<string, object> StringAlmostEqual(string ReferenceText, string CompareTo, bool CaseSensitive = true, float Threshold = 0.9F)
+        public static Dictionary<string, object> StringAlmostEqual(string ReferenceText, string CompareTo, bool CaseSensitive = true, double Threshold = 0.9D)
         {
             if (string.IsNullOrEmpty(CompareTo))
             {
                 return new Dictionary<string, object>
                 {
                     { "Result", false },
-                    { "Likeness", 0.0}
+                    { "Similarity", 0.0},
+                    { "Identical", false }
                 };
             }
 
@@ -56,7 +58,8 @@ namespace ZeroTouchNodes
                 return new Dictionary<string, object>
                 {
                     { "Result", false },
-                    { "Likeness", 0.0}
+                    { "Similarity", 0.0},
+                    { "Identical", false }
                 };
             }
 
@@ -65,7 +68,8 @@ namespace ZeroTouchNodes
                 return new Dictionary<string, object>
                 {
                     { "Result", true },
-                    { "Likeness", 1.0}
+                    { "Similarity", 1.0},
+                    { "Identical", true }
                 };
             }
 
@@ -101,13 +105,42 @@ namespace ZeroTouchNodes
             }
 
             int distance = dp[ReferenceText.Length, CompareTo.Length];
-            float likeness = LevenshteinAccuracy(ReferenceText.Length, distance);
-            bool result = likeness > Threshold ? true : false;
+            double Similarity = LevenshteinAccuracy(ReferenceText.Length, distance);
+            bool result = Similarity > Threshold ? true : false;
 
             return new Dictionary<string, object>
             {
                 { "Result", result },
-                { "Likeness", likeness }
+                { "Similarity", Similarity },
+                { "Identical", false }
+            };
+        }
+
+        [MultiReturn(new[] { "Elements", "Family Types" })]
+        public static Dictionary<string, object> LinkedElementsByCategory(Document LinkedDoc, BuiltInCategory Category)
+        {
+            FilteredElementCollector elFilter = new FilteredElementCollector(LinkedDoc);
+            elFilter.OfCategory(Category);
+            elFilter.WhereElementIsNotElementType();
+            List<Element> elements = new List<Element>();
+            foreach (FamilyInstance fi in elFilter)
+            {
+                elements.Add(fi);
+            }
+
+            FilteredElementCollector typeFilter = new FilteredElementCollector(LinkedDoc);
+            typeFilter.OfCategory(Category);
+            typeFilter.WhereElementIsElementType();
+            List<Element> symbols = new List<Element>();
+            foreach (FamilySymbol symbol in typeFilter)
+            {
+                symbols.Add(symbol);
+            }
+
+            return new Dictionary<string, object>
+            {
+                { "Elements", elements },
+                { "Types", symbols }
             };
         }
 
